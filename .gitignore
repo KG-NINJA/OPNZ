@@ -1,0 +1,5 @@
+node_modules/
+dist/
+public/audio/nuked-opn2.js
+*.log
+.DS_Store
