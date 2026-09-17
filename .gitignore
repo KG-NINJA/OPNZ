@@ -1,5 +1,6 @@
 node_modules/
 dist/
 public/audio/nuked-opn2.js
+public/licenses/
 *.log
 .DS_Store

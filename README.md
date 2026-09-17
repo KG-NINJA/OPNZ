@@ -61,7 +61,13 @@ The OPNZ application is MIT licensed. Nuked-OPN2 remains LGPL-2.1-or-later;
 its pinned corresponding source and original license are included in
 `vendor/Nuked-OPN2/`. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
+Every production build publishes the complete LGPL text and the exact React,
+React DOM, Scheduler, Lucide, and Feather license notices under `/licenses/`.
+The live interface links directly to the source and these license files.
+
 No game music, game patches, ROM data, or manufacturer branding is bundled.
+OPNZ is an independent project and is not affiliated with or endorsed by
+Yamaha Corporation or Sega Corporation.
 
 ## Project status
 

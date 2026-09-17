@@ -13,6 +13,19 @@ emulator by Alexey Khokholov (Nuke.YKT).
 - Rebuild command: `npm run build:wasm`
 
 The upstream license is preserved at `vendor/Nuked-OPN2/LICENSE`.
+The deployed site also provides the complete LGPL text and a generated bundle
+of all runtime dependency licenses under `/licenses/`.
+
+## Browser runtime dependencies
+
+The production JavaScript bundle includes the following libraries. Their exact
+installed versions and complete license texts are collected during every build
+in `public/licenses/THIRD_PARTY_LICENSES.txt`.
+
+- React and React DOM — MIT License, Copyright (c) Meta Platforms, Inc. and affiliates.
+- Scheduler — MIT License, Copyright (c) Meta Platforms, Inc. and affiliates.
+- Lucide React — ISC License, Copyright (c) Lucide Icons and Contributors.
+- Feather-derived Lucide icons — MIT License, Copyright (c) 2013-present Cole Bemis.
 
 ## MMLisp implementation research
 
@@ -25,3 +38,10 @@ licensed under the MIT License.
 
 The OPNZ application code and adapter were written for this project; this
 notice preserves attribution for the implementation research.
+
+## Trademark notice
+
+OPNZ is an independent, unofficial project. It is not affiliated with or
+endorsed by Yamaha Corporation or Sega Corporation. Product and chip names are
+used only to describe compatibility. No game music, patches, ROM data, or
+manufacturer branding is distributed with OPNZ.
