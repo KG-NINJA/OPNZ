@@ -4,12 +4,14 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "build:licenses": "node scripts/build-license-bundle.mjs",
+    "dev": "npm run build:licenses && vite",
     "build:wasm": "bash scripts/build-wasm.sh",
     "test:wasm": "node scripts/test-wasm.mjs",
+    "test:licenses": "npm run build:licenses && node scripts/test-license-bundle.mjs",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
-    "build": "npm run typecheck && vite build",
+    "test": "vitest run && npm run test:licenses",
+    "build": "npm run build:licenses && npm run typecheck && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

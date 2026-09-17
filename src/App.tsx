@@ -450,7 +450,17 @@ function App() {
       </section>
 
       <footer className="statusbar">
-        <span>Nuked-OPN2 <i /> YM3438 cycle-accurate core <i /> WebAssembly</span>
+        <span className="license-links" aria-label="Open-source attribution and licenses">
+          <a href="https://github.com/nukeykt/Nuked-OPN2" target="_blank" rel="noreferrer">Nuked-OPN2 © Nuke.YKT</a>
+          <i />
+          <span>YM3438 core</span>
+          <i />
+          <a href="https://github.com/KG-NINJA/OPNZ" target="_blank" rel="noreferrer">Source</a>
+          <i />
+          <a href={`${import.meta.env.BASE_URL}licenses/Nuked-OPN2-LGPL-2.1.txt`} target="_blank" rel="noreferrer">LGPL-2.1+</a>
+          <i />
+          <a href={`${import.meta.env.BASE_URL}licenses/THIRD_PARTY_LICENSES.txt`} target="_blank" rel="noreferrer">Licenses</a>
+        </span>
         <span className="runtime-status"><b className={`status-dot ${status === "ready" ? "ready" : status === "error" ? "error" : ""}`} />{status === "loading" ? "Loading core" : status === "error" ? "Engine error" : status === "ready" ? "Ready" : "Stopped"}<i />Sample Rate: {engineRef.current?.sampleRate ? `${(engineRef.current.sampleRate / 1000).toFixed(1)} kHz` : "—"}<i />Voices: {activeNotes.size}/6</span>
       </footer>
       {statusMessage && <button className="toast" type="button" onClick={() => setStatusMessage("")}>{statusMessage}</button>}
