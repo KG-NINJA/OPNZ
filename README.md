@@ -62,3 +62,8 @@ its pinned corresponding source and original license are included in
 `vendor/Nuked-OPN2/`. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 No game music, game patches, ROM data, or manufacturer branding is bundled.
+
+## Project status
+
+The live-synth MVP is implemented. GitHub Actions builds and validates the
+real Nuked-OPN2 WebAssembly core before each Pages deployment.
